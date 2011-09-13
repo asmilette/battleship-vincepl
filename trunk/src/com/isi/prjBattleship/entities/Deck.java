@@ -1,5 +1,7 @@
 package com.isi.prjBattleship.entities;
 
+import javax.swing.ImageIcon;
+
 public class Deck {
 	private Ship ships[];
 	private int Grid[][];
@@ -22,7 +24,7 @@ public class Deck {
 					return -1;
 			break;
 		}
-		
+		//this.ships[0] = new Ship(123,123,123,1,new ImageIcon("Img/Destroyer.gif"));
 		return -1;
 	}
 	
