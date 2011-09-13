@@ -1,6 +1,7 @@
+package com.isi.prjBattleship.entities;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-
 
 public class vLabel extends JLabel {
 	private int Flag;
@@ -16,5 +17,4 @@ public class vLabel extends JLabel {
 	public int getFlag(){
 		return this.Flag;
 	}
-
 }
