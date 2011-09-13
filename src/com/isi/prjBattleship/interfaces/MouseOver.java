@@ -11,10 +11,10 @@ public class MouseOver implements MouseListener {
 	boolean missed = false;
 	boolean hit = false;
 	vLabel lbt;
-	ImageIcon water = new ImageIcon("Img/water.gif");
-	ImageIcon feu = new ImageIcon("Img/FeuAnim.gif");
-	ImageIcon miss = new ImageIcon("Img/Miss.gif");
-	ImageIcon cible = new ImageIcon("Img/WaterTarget.gif");
+	ImageIcon iconWater = new ImageIcon("Img/water.gif");
+	ImageIcon iconFeu = new ImageIcon("Img/FeuAnim.gif");
+	ImageIcon iconMiss = new ImageIcon("Img/Miss.gif");
+	ImageIcon iconCible = new ImageIcon("Img/WaterTarget.gif");
 
 	public MouseOver(vLabel lb){
 		this.lbt = lb;
@@ -36,16 +36,16 @@ public class MouseOver implements MouseListener {
 	public void changeIcon(){
 		 switch (this.lbt.getFlag()) {
          case 1:  
-	        this.lbt.setIcon(miss);
+	        this.lbt.setIcon(iconMiss);
 	        break;
          case 2:  
-			this.lbt.setIcon(feu);       
+			this.lbt.setIcon(iconFeu);       
 	         break;
          case 3:
-        	 this.lbt.setIcon(cible);
+        	 this.lbt.setIcon(iconCible);
         	 break;
          default: 
-			this.lbt.setIcon(water);
+			this.lbt.setIcon(iconWater);
         	break;
 		 }
 	}
