@@ -19,7 +19,7 @@ public class Grids extends JFrame {
 		this.setTitle("");
 		this.setSize(450, 450);
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//this.setResizable(false);
 		
 		
