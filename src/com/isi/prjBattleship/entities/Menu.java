@@ -1,5 +1,7 @@
 package com.isi.prjBattleship.entities;
 
-public class Menu {
+import javax.swing.JFrame;
+
+public class Menu extends JFrame {
 
 }
