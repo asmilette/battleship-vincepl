@@ -1,17 +1,22 @@
 package com.isi.prjBattleship.entities;
 
-public class Ship {
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+public class Ship extends JLabel {
+	private static final long serialVersionUID = -4418934826686457341L;
 	private int len;
 	private int dir;
 	private boolean state[];
 	private int posX;
 	private int posY;
 	
-	public Ship(int posX, int posY, int len, int dir) {
+	public Ship(int posX, int posY, int len, int dir, ImageIcon img) {
 		this.posX = posX;
 		this.posY = posY;
 		this.len = len;
 		this.dir = dir;
+		this.setIcon(img);
 	}
 	
 	public boolean isReveal() {
