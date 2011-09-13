@@ -18,7 +18,7 @@ public class Deck {
 		switch(s.getDir()){
 		case 1:
 			for(int i=s.getPosX(); i<s.getPosX()+s.getLen(); i++)
-				if(isAvailable(i, s.getPosY())
+				if(isAvailable(i, s.getPosY()))
 					return -1;
 			break;
 		}
@@ -27,6 +27,6 @@ public class Deck {
 	}
 	
 	public boolean isAvailable(int X, int Y){
-		
+		return true;
 	}
 }
