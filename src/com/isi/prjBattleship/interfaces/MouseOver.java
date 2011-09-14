@@ -23,16 +23,7 @@ public class MouseOver implements MouseListener {
 	
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		if (this.lbt.isEnable() == true){
-			missed = true;
-			if (missed == true){
-				this.lbt.setFlag(1);
-			}
-			else if (hit == true){
-				this.lbt.setFlag(2);
-			}
-			changeIcon();
-		}
+
 	}
 	
 	public void changeIcon(){
@@ -88,8 +79,16 @@ public class MouseOver implements MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
+		if (this.lbt.isEnable() == true){
+			missed = true;
+			if (missed == true){
+				this.lbt.setFlag(1);
+			}
+			else if (hit == true){
+				this.lbt.setFlag(2);
+			}
+			changeIcon();
+		}
 	}
 
 	@Override

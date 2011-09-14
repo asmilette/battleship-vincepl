@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Deck extends JFrame {
-	private Ship ships[];
+	//private Ship ships[];
 	private int Grid[][];
 	private int lenX;
 	private int lenY;
@@ -24,7 +24,7 @@ public class Deck extends JFrame {
 	private Insets insets;
 
 	
-	public Deck(int lenX, int lenY) {
+	public Deck() {
 		/*for(int i = 0; i < lenX; i++)
 		for(int j = 0; j < lenY; j++)
 			this.Grid[i][j] = 1;
@@ -73,14 +73,13 @@ public class Deck extends JFrame {
 	//Frame
 	this.setTitle("BattleShip");
 	this.setSize(1050, 700);
-	this.setVisible(true);
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 	this.setResizable(false);
 	
 	this.getContentPane().add(pPrincipale, BorderLayout.CENTER);
 	}
 	
-	public int addShip(Ship s) {
+/*	public int addShip(Ship s) {
 		switch(s.getDir()){
 		case 1:
 			for(int i=s.getPosX(); i<s.getPosX()+s.getLen(); i++)
@@ -90,7 +89,7 @@ public class Deck extends JFrame {
 		}
 		//this.ships[0] = new Ship(123,123,123,1,new ImageIcon("Img/Destroyer.gif"));
 		return -1;
-	}
+	}*/
 	
 	public boolean isAvailable(int X, int Y){
 		return true;
