@@ -1,10 +1,12 @@
 package com.isi.prjBattleship.entities;
-import javax.swing.SwingUtilities;
 
+import javax.swing.SwingUtilities;
 import com.isi.prjBattleship.interfaces.Splash_Listener;
 
 public class Init {
-	private static Splash s = new Splash();
+	private static Splash_Listener sl = new Splash_Listener();
+	private static Splash s = new Splash(sl);
+	
 	private static Menu m = new Menu();
 	
 	public static void main(String[] args) {
