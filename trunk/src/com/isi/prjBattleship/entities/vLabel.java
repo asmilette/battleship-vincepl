@@ -5,9 +5,12 @@ import javax.swing.JLabel;
 
 public class vLabel extends JLabel {
 	private int Flag;
+	private boolean Enable;
+	
 	static private ImageIcon water = new ImageIcon("Img/Water.gif");
 	
-	public vLabel(){
+	public vLabel(boolean e){
+		this.Enable = e;
 		this.setIcon(water);	
 		this.Flag = 0;
 	}
@@ -16,5 +19,8 @@ public class vLabel extends JLabel {
 	}
 	public int getFlag(){
 		return this.Flag;
+	}
+	public boolean isEnable(){
+		return this.Enable;
 	}
 }

@@ -17,20 +17,22 @@ public class MouseOver implements MouseListener {
 	ImageIcon iconCible = new ImageIcon("Img/WaterTarget.gif");
 
 	public MouseOver(vLabel lb){
-		this.lbt = lb;
-		this.lbt.setFlag(0);
+			this.lbt = lb;
+			this.lbt.setFlag(0);
 	}
 	
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		missed = true;
-		if (missed == true){
-			this.lbt.setFlag(1);
+		if (this.lbt.isEnable() == true){
+			missed = true;
+			if (missed == true){
+				this.lbt.setFlag(1);
+			}
+			else if (hit == true){
+				this.lbt.setFlag(2);
+			}
+			changeIcon();
 		}
-		else if (hit == true){
-			this.lbt.setFlag(2);
-		}
-		changeIcon();
 	}
 	
 	public void changeIcon(){
@@ -52,31 +54,35 @@ public class MouseOver implements MouseListener {
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		if (missed == true){
-			this.lbt.setFlag(1);
+		if (this.lbt.isEnable() == true){
+			if (missed == true){
+				this.lbt.setFlag(1);
+			}
+			else if (hit == true){
+				this.lbt.setFlag(2);
+			}
+			else {
+				this.lbt.setFlag(3);
+			}
+			changeIcon();
 		}
-		else if (hit == true){
-			this.lbt.setFlag(2);
-		}
-		else {
-			this.lbt.setFlag(3);
-		}
-		changeIcon();
 		
 }
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		if (missed == true){
-			this.lbt.setFlag(1);
+		if (this.lbt.isEnable() == true) {
+			if (missed == true){
+				this.lbt.setFlag(1);
+			}
+			else if (hit == true){
+				this.lbt.setFlag(2);
+			}
+			else {
+				this.lbt.setFlag(0);
+			}
+			changeIcon();
 		}
-		else if (hit == true){
-			this.lbt.setFlag(2);
-		}
-		else {
-			this.lbt.setFlag(0);
-		}
-		changeIcon();
 	
  }
 
@@ -91,6 +97,4 @@ public class MouseOver implements MouseListener {
 		// TODO Auto-generated method stub
 
 	}
-	
-
 }
