@@ -12,7 +12,7 @@ public class Splash extends JFrame {
 	JLabel title;
 	
 	
-	public Splash(Splash_Listener listener){
+	public Splash(){
 		this.setTitle("JAVA Battleship");
 		this.setSize(700, 700);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,7 +21,6 @@ public class Splash extends JFrame {
 		this.title.setIcon(new ImageIcon("Img/java.jpg"));
 		this.title.setSize(400, 400);
 		this.title.setVisible(true);
-		this.title.addMouseListener(listener);
 		this.add(title);
 	}
 }
