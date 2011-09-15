@@ -22,7 +22,7 @@ public class Grids extends JFrame {
 		pan.setBackground(Color.BLACK);
 		
 		//Border Color
-		Border GreenLine = BorderFactory.createLineBorder(Color.GREEN,1); 
+		Border BorderColor = BorderFactory.createLineBorder(Color.GREEN,1); 
 		
 		//Tableau Label
 		vLabel[][] lbGrid = new vLabel[10][10];
@@ -31,7 +31,7 @@ public class Grids extends JFrame {
 			   lbGrid[i][j] = new vLabel(Enab);
 			   lbGrid[i][j].addMouseListener(new MouseOver(lbGrid[i][j]));
 			   
-			   lbGrid[i][j].setBorder(GreenLine);
+			   lbGrid[i][j].setBorder(BorderColor);
 			   pan.add(lbGrid[i][j]);	
 			}
 		}
