@@ -19,8 +19,13 @@ public class Deck extends JFrame {
 	//private int Grid[][];
 	//private int lenX;
 	//private int lenY;
+	JPanel pPrincipale;
+	JPanel pTitle;
 	Grids player;
 	Grids oponent;
+	JPanel pHqOutput;
+	JPanel pNetOutput;
+	JPanel pInput;
 	private Insets insets;
 
 	
@@ -32,12 +37,12 @@ public class Deck extends JFrame {
 	this.lenY = lenY;*/
 	
 	//Panel Principale
-	JPanel pPrincipale = new JPanel();
+	pPrincipale = new JPanel();
 	pPrincipale.setLayout(new GridBagLayout());
 	pPrincipale.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
 	
 	//Panel Titre
-	JPanel pTitle = new JPanel();		
+	pTitle = new JPanel();		
 	insets = new Insets(0, 0, 0, 0);
 	pTitle.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 	addComponent(pPrincipale, pTitle, 0, 0, 1050, 25, GridBagConstraints.FIRST_LINE_START, GridBagConstraints.NONE, insets);	
@@ -53,22 +58,22 @@ public class Deck extends JFrame {
 	addComponent(pPrincipale, this.oponent.getGrid(), 0, 1, 0, 0, GridBagConstraints.FIRST_LINE_END, GridBagConstraints.NONE, insets);
 
 	//Panel Output HQ
-	JPanel pHqOutput = new JPanel();
+	pHqOutput = new JPanel();
 	insets = new Insets(120,0,0,0);
 	pHqOutput.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 	addComponent(pPrincipale, pHqOutput, 0, 0, 140, 250, GridBagConstraints.PAGE_START, GridBagConstraints.NONE, insets);
 	
 	//Panel Output Network
-	JPanel pNetOutput = new JPanel();
+	pNetOutput = new JPanel();
 	insets = new Insets(475,250,0,250);
 	pNetOutput.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 	addComponent(pPrincipale, pNetOutput, 0, 1, 550, 150, GridBagConstraints.FIRST_LINE_START, GridBagConstraints.NONE, insets);
 	
 	//Panel Input
-	JPanel pInput = new JPanel();
+	pInput = new JPanel();
 	insets = new Insets(0,0,0,0);
 	pInput.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-	addComponent(pPrincipale, pInput, 0, 1, 90, 20, GridBagConstraints.PAGE_END, GridBagConstraints.NONE, insets);
+	addComponent(pPrincipale, pInput, 0, 1, 550, 20, GridBagConstraints.PAGE_END, GridBagConstraints.NONE, insets);
 	
 	//Frame
 	this.setTitle("BattleShip");
