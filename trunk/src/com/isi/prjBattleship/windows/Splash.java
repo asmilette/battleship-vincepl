@@ -1,4 +1,4 @@
-package com.isi.prjBattleship.entities;
+package com.isi.prjBattleship.windows;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;

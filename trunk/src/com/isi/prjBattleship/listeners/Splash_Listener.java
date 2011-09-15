@@ -3,8 +3,8 @@ package com.isi.prjBattleship.listeners;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import com.isi.prjBattleship.entities.Menu;
-import com.isi.prjBattleship.entities.Splash;
+import com.isi.prjBattleship.windows.Menu;
+import com.isi.prjBattleship.windows.Splash;
 
 public class Splash_Listener implements MouseListener {
 	private Splash s;

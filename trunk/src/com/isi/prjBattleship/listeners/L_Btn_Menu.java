@@ -6,7 +6,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-import com.isi.prjBattleship.entities.Menu;
+import com.isi.prjBattleship.windows.Menu;
 
 public class L_Btn_Menu implements MouseListener{
 	private Menu m;
