@@ -1,9 +1,9 @@
 package com.isi.prjBattleship.windows;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import com.isi.prjBattleship.entities.BtnMenu;
 import com.isi.prjBattleship.listeners.L_Btn_Menu;
 
 public class Menu extends JFrame {
@@ -14,19 +14,19 @@ public class Menu extends JFrame {
 		L_Btn_Menu lm = new L_Btn_Menu(this);
 		JPanel p = new JPanel();
 		
-		JButton btnSingle = new JButton("Single Player");
+		BtnMenu btnSingle = new BtnMenu("Single Player", 1);
 		btnSingle.addMouseListener(lm);
 		p.add(btnSingle);
 		
-		JButton btnMulti = new JButton("Multiplayer");
+		BtnMenu btnMulti = new BtnMenu("Multiplayer", 2);
 		btnMulti.addMouseListener(lm);
 		p.add(btnMulti);
 		
-		JButton btnOptions = new JButton("Options");
+		BtnMenu btnOptions = new BtnMenu("Options", 3);
 		btnOptions.addMouseListener(lm);
 		p.add(btnOptions);
 		
-		JButton btnQuit = new JButton("Quitter");
+		BtnMenu btnQuit = new BtnMenu("Quitter", 4);
 		btnQuit.addMouseListener(lm);
 		p.add(btnQuit);
 		this.add(p);
