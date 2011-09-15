@@ -1,46 +1,31 @@
 package com.isi.prjBattleship.listeners;
 
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 
-import com.isi.prjBattleship.entities.BtnMenu;
 import com.isi.prjBattleship.windows.Menu;
+import com.isi.prjBattleship.windows.Options;
 
-public class L_Btn_Menu implements MouseListener{
-	private Menu m;
+public class L_Btn_Menu implements ActionListener{
+	private JFrame m;
 	
-	public L_Btn_Menu(Menu m){
+	public L_Btn_Menu(JFrame m){
 		this.m = m;
 	}
 
 	@Override
-	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
-		if(((BtnMenu)e.getComponent()).getId() == 1)
-			this.m.StartGame();
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+	public void actionPerformed(ActionEvent e) {
+		if(((JButton)e.getSource()).getText() == "Solo")
+			((Menu)this.m).startGame();
+		else if(((JButton)e.getSource()).getText() == "Multi-Joueur")
+			((Menu)this.m).quitter();
+		else if(((JButton)e.getSource()).getText() == "Options")
+			((Menu)this.m).options();
+		else if(((JButton)e.getSource()).getText() == "Quitter")
+			((Menu)this.m).quitter();
+		else if(((JButton)e.getSource()).getText() == "Retour")
+			((Options)this.m).retour();
 	}
 }
