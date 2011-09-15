@@ -11,6 +11,7 @@ import javax.swing.border.Border;
 import com.isi.prjBattleship.interfaces.MouseOver;
 
 public class Grids extends JFrame {
+	private static final long serialVersionUID = 1935683268551345477L;
 	public JPanel Grid;
 
 	public Grids(boolean Enab){
