@@ -3,22 +3,22 @@ package com.isi.prjBattleship.interfaces;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import javax.swing.JOptionPane;
-
-import com.isi.prjBattleship.entities.Init;
+import com.isi.prjBattleship.entities.Menu;
 import com.isi.prjBattleship.entities.Splash;
 
 public class Splash_Listener implements MouseListener {
 	private Splash s;
+	private Menu m;
 	
-	public Splash_Listener(Splash s){
+	public Splash_Listener(Splash s, Menu d){
 		this.s = s;
+		this.m = d;
 	}
 	
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		s.dispose();
-		//JOptionPane.showConfirmDialog(e.getComponent(), e.getClass());
+		this.s.dispose();
+		this.m.setVisible(true);
 	}
 
 	@Override

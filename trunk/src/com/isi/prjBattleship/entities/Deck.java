@@ -7,7 +7,6 @@ import java.awt.ComponentOrientation;
 import java.awt.Container;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import java.awt.Insets;
 
 import javax.swing.BorderFactory;
@@ -15,10 +14,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Deck extends JFrame {
+	private static final long serialVersionUID = -2456053938512001747L;
 	//private Ship ships[];
-	private int Grid[][];
-	private int lenX;
-	private int lenY;
+	//private int Grid[][];
+	//private int lenX;
+	//private int lenY;
 	Grids player;
 	Grids oponent;
 	private Insets insets;

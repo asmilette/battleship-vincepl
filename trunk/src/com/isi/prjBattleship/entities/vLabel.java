@@ -4,6 +4,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 public class vLabel extends JLabel {
+	private static final long serialVersionUID = 5965173037966976706L;
 	private int Flag;
 	private boolean Enable;
 	

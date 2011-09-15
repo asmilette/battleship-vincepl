@@ -1,6 +1,5 @@
 package com.isi.prjBattleship.entities;
 
-import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import com.isi.prjBattleship.interfaces.Splash_Listener;
 
@@ -10,14 +9,15 @@ public class Init {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				//Splash screen
+				//Initier les instances
 				Splash s = new Splash();
-				Splash_Listener sl = new Splash_Listener(s);
+				Menu m = new Menu();
+				
+				//Créer le listener pour le splash screen
+				Splash_Listener sl = new Splash_Listener(s, m);
 				s.addMouseListener(sl);
 				
-				//Deck
-				Deck d = new Deck();
-				
+				//Afficher
 				s.setVisible(true);
 			}
 		});

@@ -4,8 +4,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import com.isi.prjBattleship.interfaces.Splash_Listener;
-
 public class Splash extends JFrame {
 	private static final long serialVersionUID = 696477034595205609L;
 	
