@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
-import com.isi.prjBattleship.interfaces.MouseOver;
+import com.isi.prjBattleship.listeners.MouseOver;
 
 public class Grids extends JFrame {
 	private static final long serialVersionUID = 1935683268551345477L;
@@ -25,14 +25,15 @@ public class Grids extends JFrame {
 		Border GreenLine = BorderFactory.createLineBorder(Color.GREEN,1); 
 		
 		//Tableau Label
-		vLabel[] lbGrid = new vLabel[100];
-		for(int i = 0; i<100;i++){
-
-		   lbGrid[i] = new vLabel(Enab);
-		   lbGrid[i].addMouseListener(new MouseOver(lbGrid[i]));
-		   
-		   lbGrid[i].setBorder(GreenLine);
-		   pan.add(lbGrid[i]);
+		vLabel[][] lbGrid = new vLabel[10][10];
+		for(int i = 0; i<10; i++){
+			for(int j = 0; j<10; j++){
+			   lbGrid[i][j] = new vLabel(Enab);
+			   lbGrid[i][j].addMouseListener(new MouseOver(lbGrid[i][j]));
+			   
+			   lbGrid[i][j].setBorder(GreenLine);
+			   pan.add(lbGrid[i][j]);	
+			}
 		}
 		
 		this.Grid = pan;

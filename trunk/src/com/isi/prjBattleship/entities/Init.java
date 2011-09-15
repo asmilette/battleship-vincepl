@@ -1,7 +1,7 @@
 package com.isi.prjBattleship.entities;
 
 import javax.swing.SwingUtilities;
-import com.isi.prjBattleship.interfaces.Splash_Listener;
+import com.isi.prjBattleship.listeners.Splash_Listener;
 
 public class Init {
 	

@@ -4,7 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import com.isi.prjBattleship.interfaces.L_Btn_Menu;
+import com.isi.prjBattleship.listeners.L_Btn_Menu;
 
 public class Menu extends JFrame {
 	private static final long serialVersionUID = 1L;
