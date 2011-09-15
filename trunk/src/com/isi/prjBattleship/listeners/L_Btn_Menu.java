@@ -3,9 +3,7 @@ package com.isi.prjBattleship.listeners;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-
+import com.isi.prjBattleship.entities.BtnMenu;
 import com.isi.prjBattleship.windows.Menu;
 
 public class L_Btn_Menu implements MouseListener{
@@ -18,8 +16,8 @@ public class L_Btn_Menu implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		JOptionPane.showConfirmDialog(this.m, e.getComponent().getName());
-		//this.m.StartGame();
+		if(((BtnMenu)e.getComponent()).getId() == 1)
+			this.m.StartGame();
 	}
 
 	@Override

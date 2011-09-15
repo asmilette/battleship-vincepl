@@ -11,15 +11,10 @@ public class Init {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				//Initier les instances
 				Splash s = new Splash();
 				Menu m = new Menu();
-				
-				//Créer le listener pour le splash screen
 				Splash_Listener sl = new Splash_Listener(s, m);
 				s.addMouseListener(sl);
-				
-				//Afficher
 				s.setVisible(true);
 			}
 		});
