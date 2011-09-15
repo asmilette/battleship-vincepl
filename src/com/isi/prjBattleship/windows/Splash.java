@@ -13,7 +13,8 @@ public class Splash extends JFrame {
 	public Splash(){
 		this.setTitle("JAVA Battleship");
 		this.setSize(700, 700);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+		this.setResizable(false);
 
 		this.title = new JLabel("Welcome to JAVA Battleships");
 		this.title.setIcon(new ImageIcon("Img/java.jpg"));
