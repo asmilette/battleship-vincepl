@@ -1,4 +1,4 @@
-package com.isi.prjBattleship.entities;
+package com.isi.prjBattleship.windows;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

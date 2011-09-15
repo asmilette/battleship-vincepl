@@ -2,6 +2,8 @@ package com.isi.prjBattleship.entities;
 
 import javax.swing.SwingUtilities;
 import com.isi.prjBattleship.listeners.Splash_Listener;
+import com.isi.prjBattleship.windows.Menu;
+import com.isi.prjBattleship.windows.Splash;
 
 public class Init {
 	

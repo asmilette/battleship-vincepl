@@ -1,4 +1,4 @@
-package com.isi.prjBattleship.entities;
+package com.isi.prjBattleship.windows;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -12,6 +12,8 @@ import java.awt.Insets;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import com.isi.prjBattleship.entities.Grids;
 
 public class Deck extends JFrame {
 	private static final long serialVersionUID = -2456053938512001747L;
